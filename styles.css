@@ -1,0 +1,285 @@
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    animation: flyIn 2.2s forwards;
+    background-color: #fff; /* To ensure the header has a background if video loads behind it */
+    z-index: 2; /* Keeps the header above the video */
+    position: relative;
+  }
+
+  .logo {
+    height: 100px;
+    margin-left: 80px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 115px;
+  }
+
+  .nav-links a {
+    font-family: "Cinzel", serif;
+    font-weight: 900;
+    text-decoration: none;
+    color: #72383d;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: goldenrod;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 100px;
+  }
+
+  .social-icons img {
+    height: 24px;
+  }
+
+  /* Animation */
+  @keyframes flyIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .video-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+
+  .centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    z-index: 3;
+    opacity: 0; /* Start the image as invisible */
+    animation: fadeIn 0.5s forwards; /* Apply the animation */
+    animation-delay: 2s; /* Delay the animation for 2 seconds */
+  }
+
+  .about-section {
+    position: relative;
+    padding: 75px 0; /* Increased padding for 150% height */
+    text-align: center;
+    background: url("pic5.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .reserve-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white; /* Text color */
+    background-color: gold; /* Default background color */
+    border-radius: 50px; /* To achieve rounded corners */
+    font-family: "Cinzel", serif;
+  }
+
+  .reserve-btn:hover {
+    background-color: darkgreen; /* Dark green color on hover */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  footer {
+    background-color: #d1c7bd;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-logo {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 60px;
+  }
+
+  .footer-info {
+    text-align: left;
+  }
+
+  .footer-info p {
+    margin: 5px 0;
+  }
+
+  .footer-info div {
+    display: inline-block;
+    margin: 60px; /* Reduce the left margin to move sections to the left */
+    vertical-align: top;
+  }
+
+  .info-title {
+    font-size: 18px; /* Larger font size for titles */
+    font-weight: bold; /* Make the title text bold */
+  }
+
+  .info-title + p {
+    margin-top: 10px; /* Add margin to create a gap between title and paragraph */
+  }
+
+
+.social-icons img {
+    margin-right: 10px;
+  }
+  .social-icons {
+    margin: 20px;
+  }
+  /* Chef Section Styles */
+  .chef-section {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    background-color: #f5f5f5;
+  }
+
+  .chef-image img {
+    width: 500px;
+    height: auto;
+    margin-left: 100px; /* Adjusted margin to the left */
+  }
+
+  .chef-details {
+    flex-grow: 1;
+  }
+
+  .chef-details h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .chef-details p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  /* Use media queries to make the layout responsive */
+
+  @media screen and (max-width: 800px) {
+    /* Apply this style when the screen width is less than or equal to 800px */
+    .footer-info div {
+      display: block; /* Stack the divs vertically */
+      margin: 0 auto; /* Center the divs horizontally */
+      max-width: 300px; /* Limit the width of the divs */
+    }
+  }
+
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: goldenrod;
+    transition: background-color 0.5s;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .read-more-btn:hover {
+    background-color: green;
+  }
+
+  @media screen and (max-width: 600px) {
+    /* Apply this style when the screen width is less than or equal to 600px */
+    .footer-logo {
+      float: none; /* Remove the float property */
+      display: block; /* Make the logo a block element */
+      margin-left: auto; /* Center the logo horizontally */
+      margin-right: auto;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .bodyn {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: "Crimson Text", serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* In case you need the images to wrap in smaller screens */
+  }
+
+  .image-box {
+    position: relative;
+    width: 20%;
+    margin: 85px; /* Adjusted for better spacing */
+    overflow: hidden; /* In case images are different sizes */
+  }
+
+  .image-box img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.2s, transform 0.2s; /* Combined transitions */
+  }
+
+  .image-box:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+  header {
+    color: rgb(233, 199, 5) ;
+    text-align: center;
+    padding: 20px;
+}
+
