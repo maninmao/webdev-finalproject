@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins',sans-serif; */
+  font-family: 'Crimson Text', serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+
+/* --Nav Bar-- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  animation: flyIn 2.2s forwards;
+  background-color: #fff; 
+  z-index: 2; 
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  height: 100px;
+  margin-left: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 115px;
+}
+
+.nav-links a {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  text-decoration: none;
+  color: #72383D;
+  transition: color 0.3s;
+}
+
+
+.nav-links a:hover {
+  color: goldenrod;
+}
+
+
+.social-icons {
+  display: flex;
+  /* gap: 10px; */
+  margin-right: 100px;
+}
+
+.social-icons img {
+  height: 24px;
+}
+
+/* Animation */
+@keyframes flyIn {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+/* body section */
+
+/* .content{
+  max-width: 1250px;
+  width: auto;
+  margin: auto;
+  padding: 0 10px;
+  padding-top: 100px;
+  text-align: center;
+}
+.content h2 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+    font-weight: normal;
+} */
+/* .content p {
+    font-size: 1.2rem;
+    margin: 2rem;
+    text-align: center;
+} */
+
+/* lunch section */
+.lunch-menu {
+    text-align: center;
+}
+
+.lunch-menu h2 {
+    font-size: 2rem; 
+    width: auto;
+    margin: auto;
+    padding: 0 10px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #ffffff;
+}
+
+/* dinner section */
+.dinner-menu {
+    text-align: center;
+}
+
+.dinner-menu h2 {
+    font-size: 2rem; 
+    width: auto;
+    margin: auto;
+    padding: 0 10px;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* dessert menu */
+.dessert-menu {
+    text-align: center;
+}
+
+.dessert-menu h2 {
+    font-size: 2rem; 
+    width: auto;
+    margin: auto;
+    padding: 0 10px;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* block sections */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 3rem;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.menu-item img {
+    width: 250px;
+    height: 250px;
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Enlarge the menu item on hover */
+}
+
+/* .menu-item:hover::before {
+  content: "Khmer Amok";
+  position: absolute;
+  top: 0; Adjust the vertical position of the card */
+  /* bottom: 10;
+  left: -50;
+  right: -150px;
+  background-color: beige; Beige background color for the card */
+  /* padding: 50px;
+  border-radius: 1px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s; */
+/* } */
+
+/* .menu-item:hover h3, .menu-item:hover p, .menu-item:hover img {
+  opacity: 0; /* Hide the original content on hover */
+/* } */ 
+
+.menu-item:hover::before h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #72383D;
+  font-weight: bold;
+}
+
+.menu-item:hover::before p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #72383D;
+}
+
+.menu-item:hover::before img {
+  width: 250px; /* Adjust the image size on the card */
+  height: auto;
+}
+/* -- Footer-- */
+
+footer {
+  /* background-color: #f9f8f8;  */
+  background-color: #EFE9E1; 
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.footer-logo {
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-info div {
+  display: inline-block;
+  margin: 60px; /* Reduce the left margin to move sections to the left */
+  vertical-align: top;
+}
+
+.info-title {
+  font-size: 18px; /* Larger font size for titles */
+  font-weight: bold; /* Make the title text bold */
+}
+
+.info-title + p {
+  margin-top: 10px; /* Add margin to create a gap between title and paragraph */
+}
+
+.social-icons img {
+  margin-right: 10px;
+}
+.social-icons {
+  margin: 20px;
+}
+
+/* Use media queries to make the layout responsive */
+
+@media screen and (max-width: 800px) { /* Apply this style when the screen width is less than or equal to 800px */
+  .footer-info div {
+      display: block; /* Stack the divs vertically */
+      margin: 0 auto; /* Center the divs horizontally */
+      max-width: 300px; /* Limit the width of the divs */
+  }
+}
+
+@media screen and (max-width: 600px) { /* Apply this style when the screen width is less than or equal to 600px */
+  .footer-logo {
+      float: none; /* Remove the float property */
+      display: block; /* Make the logo a block element */
+      margin-left: auto; /* Center the logo horizontally */
+      margin-right: auto;
+  }
+}
