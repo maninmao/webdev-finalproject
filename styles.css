@@ -1,9 +1,10 @@
-body {
+* {
     font-family: "Georgia", serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
-
+/* Nav Bar */
   .header {
     display: flex;
     justify-content: space-between;
@@ -13,6 +14,7 @@ body {
     background-color: #fff; /* To ensure the header has a background if video loads behind it */
     z-index: 2; /* Keeps the header above the video */
     position: relative;
+    width: 100%;
   }
 
   .logo {
@@ -39,7 +41,7 @@ body {
 
   .social-icons {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     margin-right: 100px;
   }
 
@@ -80,6 +82,9 @@ body {
     animation: fadeIn 0.5s forwards; /* Apply the animation */
     animation-delay: 2s; /* Delay the animation for 2 seconds */
   }
+p{
+font-family: 'Manrope', sans-serif;
+  }
 
   .about-section {
     position: relative;
@@ -94,17 +99,17 @@ body {
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
     transition: background-color 0.3s;
     color: white; /* Text color */
-    background-color: gold; /* Default background color */
+    background-color: #cda15b; /* Default background color */
     border-radius: 50px; /* To achieve rounded corners */
     font-family: "Cinzel", serif;
   }
 
   .reserve-btn:hover {
-    background-color: darkgreen; /* Dark green color on hover */
+    background-color: black; /* Dark green color on hover */
   }
 
   @keyframes fadeIn {
@@ -116,7 +121,7 @@ body {
     }
   }
   footer {
-    background-color: #d1c7bd;
+    background-color: #EFE9E1;
     color: #000000;
     padding: 20px;
     text-align: center;
@@ -181,14 +186,16 @@ body {
   }
 
   .chef-details h2 {
+    font-family: 'Manrope';
     margin: 0;
     font-size: 24px;
+    font-style:initial;
   }
 
   .chef-details p {
     margin-top: 10px;
-    font-size: 18px;
-    font-style: italic;
+    font-size: 16px;
+    /* font-style: italic; */
   }
 
   /* Use media queries to make the layout responsive */
@@ -207,7 +214,7 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 50px;
-    background-color: goldenrod;
+    background-color: #cda15b;
     transition: background-color 0.5s;
     color: white;
     border: none;
@@ -216,7 +223,7 @@ body {
   }
 
   .read-more-btn:hover {
-    background-color: green;
+    background-color: black;
   }
 
   @media screen and (max-width: 600px) {

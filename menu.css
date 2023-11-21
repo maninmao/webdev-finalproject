@@ -61,14 +61,14 @@
 }
 
 /* Animation */
-@keyframes flyIn {
+/* @keyframes flyIn {
   from {
       transform: translateX(100%);
   }
   to {
       transform: translateX(0);
   }
-}
+} */
 /* body section */
 
 /* .content{
@@ -92,11 +92,11 @@
 } */
 
 /* lunch section */
-.lunch-menu {
+#appetizer-menu {
     text-align: center;
 }
 
-.lunch-menu h2 {
+#appetizer-menu h2 {
     font-size: 2rem; 
     width: auto;
     margin: auto;
@@ -109,11 +109,11 @@
 }
 
 /* dinner section */
-.dinner-menu {
+#main-menu {
     text-align: center;
 }
 
-.dinner-menu h2 {
+#main-menu h2 {
     font-size: 2rem; 
     width: auto;
     margin: auto;
@@ -125,11 +125,11 @@
 }
 
 /* dessert menu */
-.dessert-menu {
+#dessert-menu {
     text-align: center;
 }
 
-.dessert-menu h2 {
+#dessert-menu h2 {
     font-size: 2rem; 
     width: auto;
     margin: auto;
