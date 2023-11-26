@@ -260,32 +260,76 @@ font-family: 'Manrope', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* In case you need the images to wrap in smaller screens */
-  }
-
-  .image-box {
-    position: relative;
-    width: 20%;
-    margin: 85px; /* Adjusted for better spacing */
-    overflow: hidden; /* In case images are different sizes */
-  }
-
-  .image-box img {
-    display: block;
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 0.2s, transform 0.2s; /* Combined transitions */
-  }
-
-  .image-box:hover img {
-    filter: grayscale(0%);
-    transform: scale(1.05); /* Scale image on hover */
 }
 
-  header {
-    color: rgb(233, 199, 5) ;
+.image-box {
+    position: relative;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    transition: transform 0.2s;
+    margin: 85px;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+}
+
+.image-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    ;
+    transition: filter 0.2s;
+}
+
+.image-box:hover img {
+  filter: grayscale(10%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.image-box:hover .overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+.image-box:hover .overlay-text {
+    color: #af9b04;
+}
+
+
+
+
+
+.second-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.image-box:hover .second-image {
+    display: block;
+}
+
+header {
+    background-color: goldendark;
     text-align: center;
     padding: 20px;
 }
