@@ -61,14 +61,14 @@
 }
 
 /* Animation */
-/* @keyframes flyIn {
+@keyframes flyIn {
   from {
       transform: translateX(100%);
   }
   to {
       transform: translateX(0);
   }
-} */
+}
 /* body section */
 
 /* .content{

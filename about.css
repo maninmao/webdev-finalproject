@@ -1,0 +1,231 @@
+* {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* --Nav Bar-- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    animation: flyIn 2.2s forwards;
+    background-color: #fff; 
+    z-index: 2; 
+    position: fixed;
+    width: 100%;
+  }
+  
+  .logo {
+    height: 100px;
+    margin-left: 80px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 115px;
+  }
+  
+  .nav-links a {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    text-decoration: none;
+    color: #72383D;
+    transition: color 0.3s;
+  }
+  
+  
+  .nav-links a:hover {
+    color: goldenrod;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    /* gap: 10px; */
+    margin-right: 100px;
+  }
+  
+  .social-icons img {
+    height: 24px;
+  }
+
+ /* Animation */
+ @keyframes flyIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+body {
+    font-family: "Crimson Text", serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    background-color: #ffffff;
+    color: #AC9C8D;
+    text-align: center;
+    padding-top:  150px;
+    padding-bottom: 0;
+    width: 100%;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 36px;
+    width: 100%;
+}
+
+/* .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+
+    
+    
+} */
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+    
+}
+
+.restaurant-image {
+    max-width: 100%;
+}
+
+.section-description {
+    padding-top:50px;
+    height: 390px;
+    width: 39%;
+    justify-content: center;
+}
+.section-description img{
+    /* padding-bottom: 40px; */
+    height: 245px;
+    padding-left: 350px;
+    
+}
+
+.section-description p {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    margin-top: 30px;
+    /* margin-left: 200px; */
+    padding-left: 190px;
+    text-wrap: pretty;
+}
+
+
+
+
+.section-title {
+  margin-top: 10px;
+}
+
+.section-description {
+  margin-top: 20px;
+}
+
+
+.interior-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+  padding-bottom: 60px;
+}
+
+.interior-image {
+    width: 30%;
+    margin: 10px 0;
+    
+}
+
+/* Footer */
+
+footer {
+    /* background-color: #f9f8f8;  */
+    background-color: #EFE9E1; 
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-logo {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 60px;
+  }
+  
+  .footer-info {
+    text-align: left;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+  }
+  
+  .footer-info div {
+    display: inline-block;
+    margin: 60px; /* Reduce the left margin to move sections to the left */
+    vertical-align: top;
+  }
+  
+  .info-title {
+    font-size: 18px; /* Larger font size for titles */
+    font-weight: bold; /* Make the title text bold */
+  }
+  
+  .info-title + p {
+    margin-top: 10px; /* Add margin to create a gap between title and paragraph */
+  }
+  
+  .social-icons img {
+    margin-right: 10px;
+  }
+  .social-icons {
+    margin: 20px;
+  }
+  
+  /* Use media queries to make the layout responsive */
+  
+  @media screen and (max-width: 800px) { /* Apply this style when the screen width is less than or equal to 800px */
+    .footer-info div {
+        display: block; /* Stack the divs vertically */
+        margin: 0 auto; /* Center the divs horizontally */
+        max-width: 300px; /* Limit the width of the divs */
+    }
+  }
+  
+  @media screen and (max-width: 600px) { /* Apply this style when the screen width is less than or equal to 600px */
+    .footer-logo {
+        float: none; /* Remove the float property */
+        display: block; /* Make the logo a block element */
+        margin-left: auto; /* Center the logo horizontally */
+        margin-right: auto;
+    }
+  }
