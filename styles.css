@@ -1,5 +1,5 @@
 * {
-    font-family: "Georgia", serif;
+    font-family: 'Crimson text', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,7 +83,7 @@
     animation-delay: 2s; /* Delay the animation for 2 seconds */
   }
 p{
-font-family: 'Manrope', sans-serif;
+font-family: 'Crimson Text', serif;
   }
 
   .about-section {
@@ -99,13 +99,12 @@ font-family: 'Manrope', sans-serif;
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
-    font-size: 17px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
     color: white; /* Text color */
     background-color: #cda15b; /* Default background color */
     border-radius: 50px; /* To achieve rounded corners */
-    font-family: "Cinzel", serif;
   }
 
   .reserve-btn:hover {
@@ -120,53 +119,76 @@ font-family: 'Manrope', sans-serif;
       opacity: 1;
     }
   }
-  footer {
-    background-color: #EFE9E1;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-  }
+  /* -- Footer-- */
 
-  .footer-logo {
-    float: left;
-    margin-bottom: 10px;
-    margin-left: 60px;
-  }
+footer {
+  /* background-color: #f9f8f8;  */
+  font-family: 'Crimson Text', serif;
+  background-color: #EFE9E1; 
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
 
-  .footer-info {
-    text-align: left;
-  }
+.footer-logo {
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
 
-  .footer-info p {
-    margin: 5px 0;
-  }
+.footer-info {
+  text-align: left;
+}
 
-  .footer-info div {
-    display: inline-block;
-    margin: 60px; /* Reduce the left margin to move sections to the left */
-    vertical-align: top;
-  }
+.footer-info p {
+  margin: 5px 0;
+}
 
-  .info-title {
-    font-size: 18px; /* Larger font size for titles */
-    font-weight: bold; /* Make the title text bold */
-  }
+.footer-info div {
+  display: inline-block;
+  margin: 60px; /* Reduce the left margin to move sections to the left */
+  vertical-align: top;
+}
 
-  .info-title + p {
-    margin-top: 10px; /* Add margin to create a gap between title and paragraph */
-  }
+.info-title {
+  font-size: 18px; /* Larger font size for titles */
+  font-weight: bold; /* Make the title text bold */
+}
 
+.info-title + p {
+  margin-top: 10px; /* Add margin to create a gap between title and paragraph */
+}
 
 .social-icons img {
-    margin-right: 10px;
+  margin-right: 10px;
+}
+.social-icons {
+  margin: 20px;
+}
+
+/* Use media queries to make the layout responsive */
+
+@media screen and (max-width: 800px) { /* Apply this style when the screen width is less than or equal to 800px */
+  .footer-info div {
+      display: block; /* Stack the divs vertically */
+      margin: 0 auto; /* Center the divs horizontally */
+      max-width: 300px; /* Limit the width of the divs */
   }
-  .social-icons {
-    margin: 20px;
+}
+
+@media screen and (max-width: 600px) { /* Apply this style when the screen width is less than or equal to 600px */
+  .footer-logo {
+      float: none; /* Remove the float property */
+      display: block; /* Make the logo a block element */
+      margin-left: auto; /* Center the logo horizontally */
+      margin-right: auto;
   }
+}
+
   /* Chef Section Styles */
   .chef-section {
     display: flex;
@@ -186,7 +208,8 @@ font-family: 'Manrope', sans-serif;
   }
 
   .chef-details h2 {
-    font-family: 'Manrope';
+    font-family: 'Crimson Text', serif;
+    font-weight: 18px;
     margin: 0;
     font-size: 24px;
     font-style:initial;
@@ -194,7 +217,7 @@ font-family: 'Manrope', sans-serif;
 
   .chef-details p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 20px;
     /* font-style: italic; */
   }
 
@@ -220,6 +243,7 @@ font-family: 'Manrope', sans-serif;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    /* font-family: 'Cinzel', serif; */
   }
 
   .read-more-btn:hover {
@@ -248,12 +272,12 @@ font-family: 'Manrope', sans-serif;
     background-color: white;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    font-family: "Crimson Text", serif;
+    font-family: 'Crimson Text', serif;
   }
 
   .container {
@@ -332,5 +356,6 @@ header {
     background-color: goldendark;
     text-align: center;
     padding: 20px;
+    font-family: 'Crimson Text', serif;
 }
 

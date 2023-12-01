@@ -71,25 +71,6 @@
 }
 /* body section */
 
-/* .content{
-  max-width: 1250px;
-  width: auto;
-  margin: auto;
-  padding: 0 10px;
-  padding-top: 100px;
-  text-align: center;
-}
-.content h2 {
-  font-size: 2rem;
-  margin: 2rem;
-  text-align: center;
-    font-weight: normal;
-} */
-/* .content p {
-    font-size: 1.2rem;
-    margin: 2rem;
-    text-align: center;
-} */
 
 /* lunch section */
 #appetizer-menu {
@@ -162,6 +143,12 @@
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
+.menu-item h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    font-family: 'Noto Serif Khmer', serif;
+}
 
 .menu-item p {
     font-size: 1rem;
@@ -176,26 +163,7 @@
   transform: scale(1.05); /* Enlarge the menu item on hover */
 }
 
-/* .menu-item:hover::before {
-  content: "Khmer Amok";
-  position: absolute;
-  top: 0; Adjust the vertical position of the card */
-  /* bottom: 10;
-  left: -50;
-  right: -150px;
-  background-color: beige; Beige background color for the card */
-  /* padding: 50px;
-  border-radius: 1px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  opacity: 1;
-  transform: translateY(-10px);
-  transition: opacity 0.3s, transform 0.3s; */
-/* } */
 
-/* .menu-item:hover h3, .menu-item:hover p, .menu-item:hover img {
-  opacity: 0; /* Hide the original content on hover */
-/* } */ 
 
 .menu-item:hover::before h3 {
   font-size: 1.2rem;
@@ -214,6 +182,7 @@
   width: 250px; /* Adjust the image size on the card */
   height: auto;
 }
+
 /* -- Footer-- */
 
 footer {

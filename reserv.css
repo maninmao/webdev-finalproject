@@ -1,5 +1,5 @@
 * {
-    font-family: "Georgia", serif;
+    font-family: 'Crimson Text', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,7 +74,7 @@
 
 #revform1 {
     background-color: #ffffff;
-    color: #D1C7BD;
+    color: #080808;
     padding: 0 10px;
     padding-top: 150px;
     padding-bottom: 50px;
@@ -86,8 +86,8 @@ h1 {
     font-size: 36px;
 }
 
-p {
-    font-size: 18px;
+.right p {
+    font-size: 20px;
     margin: 20px;
 }
 

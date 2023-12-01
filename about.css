@@ -1,5 +1,5 @@
 * {
-    font-family: "Georgia", serif;
+  font-family: 'Crimson Text', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -66,7 +66,7 @@
 
 
 body {
-    font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -75,7 +75,7 @@ body {
 
 header {
     background-color: #ffffff;
-    color: #AC9C8D;
+    color: #141414;
     text-align: center;
     padding-top:  150px;
     padding-bottom: 0;
@@ -89,15 +89,6 @@ h1 {
     width: 100%;
 }
 
-/* .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-
-    
-    
-} */
 
 .section {
     display: flex;
@@ -125,18 +116,15 @@ h1 {
 }
 
 .section-description p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8em;
     font-family: "Crimson Text", serif;
     text-align: center;
     margin-top: 30px;
     /* margin-left: 200px; */
-    padding-left: 190px;
+    padding-left: 195px;
     text-wrap: pretty;
 }
-
-
-
 
 .section-title {
   margin-top: 10px;
@@ -160,7 +148,9 @@ h1 {
     margin: 10px 0;
     
 }
-
+.interior-image:hover {
+  transform: scale(1.05); /* Enlarge the menu item on hover */
+}
 /* Footer */
 
 footer {
